@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Léo SALVADOR</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+	<icon>images\Logo-128x128.png</icon>
+    <projectUrl>https://github.com/Ingeloop/Ingeloop.WPF.Theme</projectUrl>
+    <description>Ingeloop Branding Library for WPF (Icons, Colors, Animations)</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Ingeloop WPF</tags>
+  </metadata>
+  <files>
+    <file src="..\Logo-128x128.png" target="images\" />
+  </files>
+</package>

@@ -1,0 +1,12 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Ingeloop.WPF.Theme">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Ingeloop.WPF.Icons;component/Resources/Generic.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Ingeloop.WPF.Core;component/Resources/Converters.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Ingeloop.WPF.Design;component/Resources/Design.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

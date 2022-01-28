@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingeloop.WPF.Theme", "Ingeloop.WPF.Theme\Ingeloop.WPF.Theme.csproj", "{EDFEACB1-7E27-46BA-ADFA-52CB75B9B143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingeloop.WPF.Theme.Demo", "Ingeloop.WPF.Theme.Demo\Ingeloop.WPF.Theme.Demo.csproj", "{0D2CE14E-5A91-441E-8805-833D90BC68FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFEACB1-7E27-46BA-ADFA-52CB75B9B143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFEACB1-7E27-46BA-ADFA-52CB75B9B143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFEACB1-7E27-46BA-ADFA-52CB75B9B143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFEACB1-7E27-46BA-ADFA-52CB75B9B143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2CE14E-5A91-441E-8805-833D90BC68FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2CE14E-5A91-441E-8805-833D90BC68FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2CE14E-5A91-441E-8805-833D90BC68FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2CE14E-5A91-441E-8805-833D90BC68FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0AB413B-CA5A-400B-AACC-16C7C4B0E74B}
+	EndGlobalSection
+EndGlobal
