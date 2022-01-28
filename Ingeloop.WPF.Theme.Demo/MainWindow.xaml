@@ -6,16 +6,29 @@
         xmlns:local="clr-namespace:Ingeloop.WPF.Theme.Demo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        >
-    <!--xmlns:design="clr-namespace:Ingeloop.WPF.Design;assembly=Ingeloop.WPF.Design"
+        
         xmlns:icons="clr-namespace:Ingeloop.WPF.Icons;assembly=Ingeloop.WPF.Icons"
-        >-->
+        xmlns:design="clr-namespace:Ingeloop.WPF.Design;assembly=Ingeloop.WPF.Design"
+        xmlns:theme="clr-namespace:Ingeloop.WPF.Theme;assembly=Ingeloop.WPF.Theme"
+        >
 
     <Window.Resources>
         <ResourceDictionary Source="pack://application:,,,/Ingeloop.WPF.Theme;component/Resources/Theme.xaml"/>
     </Window.Resources>
     
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <theme:IngeloopFullLogo></theme:IngeloopFullLogo>
+
+        <theme:IngeloopLogo Grid.Row="1"></theme:IngeloopLogo>
+        
+        <Button Width="150" Grid.Row="2">Click me</Button>
+        
         
     </Grid>
 </Window>

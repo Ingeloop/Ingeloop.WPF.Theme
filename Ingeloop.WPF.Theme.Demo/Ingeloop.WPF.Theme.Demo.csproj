@@ -35,6 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ingeloop.WPF.Core, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ingeloop.WPF.Core.1.0.0.1\lib\net48\Ingeloop.WPF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ingeloop.WPF.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ingeloop.WPF.Design.1.0.0\lib\net48\Ingeloop.WPF.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Ingeloop.WPF.Icons, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ingeloop.WPF.Icons.1.0.0.3\lib\net472\Ingeloop.WPF.Icons.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -86,6 +95,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

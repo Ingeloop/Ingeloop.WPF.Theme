@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-250 -125 500 250">
+  <defs
+     id="def1" />
+  <g
+     id="layer1">
+    <path
+       d="M -225,14.4338 L -225,-14.4338 L -50,-115.4701 L -50,57.735 L -75,43.3013 L -75,-72.1688 L -225,14.4338 z "
+       style="fill:#1c79be;fill-opacity:1;fill-rule:evenodd"
+       id="path1" />
+	<path
+       d="M -225,14.4338 L -75,-72.1688 L -75,-43.3013 L -175,14.4338 L -25,101.0363 L -50,115.4701 L -225,14.4338 z "
+       style="fill:#0c3c7a;fill-opacity:1;fill-rule:evenodd"
+       id="path2" />
+	<path
+       d="M -175,14.4338 L -150,0 L -50,57.735 L -50,-115.4701 L -25,-101.0363 L -25,101.0363 L -175,14.4338 z "
+       style="fill:#7ad6fa;fill-opacity:1;fill-rule:evenodd"
+       id="path3" />
+  </g>
+  <g
+     id="layer2"
+	 transform="rotate(180,0,0) translate(0,0)">
+     <!-- transform="scale(-1,1)"> -->
+    <path
+       d="M -225,14.4338 L -225,-14.4338 L -50,-115.4701 L -50,57.735 L -75,43.3013 L -75,-72.1688 L -225,14.4338 z "
+       style="fill:#1c79be;fill-opacity:1;fill-rule:evenodd"
+       id="path1" />
+	<path
+       d="M -225,14.4338 L -75,-72.1688 L -75,-43.3013 L -175,14.4338 L -25,101.0363 L -50,115.4701 L -225,14.4338 z "
+       style="fill:#7ad6fa;fill-opacity:1;fill-rule:evenodd"
+       id="path2" />
+	<path
+       d="M -175,14.4338 L -150,0 L -50,57.735 L -50,-115.4701 L -25,-101.0363 L -25,101.0363 L -175,14.4338 z "
+       style="fill:#0c3c7a;fill-opacity:1;fill-rule:evenodd"
+       id="path3" />
+  </g>
+
+</svg>

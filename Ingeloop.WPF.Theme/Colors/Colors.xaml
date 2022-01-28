@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Ingeloop.WPF.Theme">
+
+    <Color x:Key="IngeloopLightBlue">#7ad6fa</Color>
+    <SolidColorBrush x:Key="IngeloopLightBlueBrush" Color="{StaticResource IngeloopLightBlue}" />
+
+    <Color x:Key="IngeloopMediumBlue">#1c79be</Color>
+    <SolidColorBrush x:Key="IngeloopMediumBlueBrush" Color="{StaticResource IngeloopMediumBlue}" />
+
+    <Color x:Key="IngeloopDarkBlue">#0c3c7a</Color>
+    <SolidColorBrush x:Key="IngeloopDarkBlueBrush" Color="{StaticResource IngeloopDarkBlue}" />
+
+</ResourceDictionary>

@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="Ingeloop.WPF.Theme.IngeloopLogo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ingeloop.WPF.Theme"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+        <Canvas Name="svg1003" Width="500" Height="250">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="250" Y="125"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources/>
+
+            <Canvas Name="layer1">
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path1" Fill="#FF1C79BE">
+                    <Path.Data>
+                        <PathGeometry Figures="M -225 14.4338 L -225 -14.4338 L -50 -115.4701 L -50 57.735 L -75 43.3013 L -75 -72.1688 L -225 14.4338 z " FillRule="EvenOdd"/>
+                    </Path.Data>
+                </Path>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#FF0C3C7A">
+                    <Path.Data>
+                        <PathGeometry Figures="M -225 14.4338 L -75 -72.1688 L -75 -43.3013 L -175 14.4338 L -25 101.0363 L -50 115.4701 L -225 14.4338 z " FillRule="EvenOdd"/>
+                    </Path.Data>
+                </Path>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3" Fill="#FF7AD6FA">
+                    <Path.Data>
+                        <PathGeometry Figures="M -175 14.4338 L -150 0 L -50 57.735 L -50 -115.4701 L -25 -101.0363 L -25 101.0363 L -175 14.4338 z " FillRule="EvenOdd"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+            <Canvas Name="layer2">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="0" Y="0"/>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path996" Fill="#FF1C79BE">
+                    <Path.Data>
+                        <PathGeometry Figures="M -225 14.4338 L -225 -14.4338 L -50 -115.4701 L -50 57.735 L -75 43.3013 L -75 -72.1688 L -225 14.4338 z " FillRule="EvenOdd"/>
+                    </Path.Data>
+                </Path>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path998" Fill="#FF7AD6FA">
+                    <Path.Data>
+                        <PathGeometry Figures="M -225 14.4338 L -75 -72.1688 L -75 -43.3013 L -175 14.4338 L -25 101.0363 L -50 115.4701 L -225 14.4338 z " FillRule="EvenOdd"/>
+                    </Path.Data>
+                </Path>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path1000" Fill="#FF0C3C7A">
+                    <Path.Data>
+                        <PathGeometry Figures="M -175 14.4338 L -150 0 L -50 57.735 L -50 -115.4701 L -25 -101.0363 L -25 101.0363 L -175 14.4338 z " FillRule="EvenOdd"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+
+</UserControl>
