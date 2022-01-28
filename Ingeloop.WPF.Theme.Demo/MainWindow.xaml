@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Ingeloop.WPF.Theme.Demo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        
         xmlns:icons="clr-namespace:Ingeloop.WPF.Icons;assembly=Ingeloop.WPF.Icons"
+        xmlns:core="clr-namespace:Ingeloop.WPF.Core;assembly=Ingeloop.WPF.Core"
         xmlns:design="clr-namespace:Ingeloop.WPF.Design;assembly=Ingeloop.WPF.Design"
         xmlns:theme="clr-namespace:Ingeloop.WPF.Theme;assembly=Ingeloop.WPF.Theme"
         >
@@ -23,7 +23,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <theme:IngeloopFullLogo></theme:IngeloopFullLogo>
+        <theme:IngeloopFullLogo/>
 
         <theme:IngeloopLogo Grid.Row="1"></theme:IngeloopLogo>
         
