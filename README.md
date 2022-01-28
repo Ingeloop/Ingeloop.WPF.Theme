@@ -35,7 +35,7 @@ Load the resource to your UI, as follow:
 
 ### 3) Icons:
 
-You can use Ingeloop icons like as follow:
+You can use Ingeloop icons as follow:
 
 ```xaml
 <theme:IngeloopFullLogo/>
