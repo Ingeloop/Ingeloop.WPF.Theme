@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="Ingeloop.WPF.Theme.VersionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ingeloop.WPF.Theme"
+             mc:Ignorable="d"
+             x:Name="versionControl">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/Ingeloop.WPF.Theme;component/Resources/Theme.xaml"/>
+    </UserControl.Resources>
+    
+    <Grid x:Name="versionGrid" ToolTipService.ShowDuration="60000" Cursor="Hand">
+        <Border Background="White" Opacity="0.15" CornerRadius="10">
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="MouseUp">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <BooleanAnimationUsingKeyFrames 
+                                    Storyboard.TargetName="versionPopup" 
+                                    Storyboard.TargetProperty="IsOpen">
+                                    <DiscreteBooleanKeyFrame KeyTime="0:0:0" Value="True" />
+                                </BooleanAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Border.Triggers>
+        </Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Height="20" Width="20" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="0">
+                <Ellipse Fill="{StaticResource VeryLightGrayBrush}" Opacity="0.95"/>
+                <local:IngeloopLogo/>
+            </Grid>
+
+            <TextBlock
+                Grid.Column="1"
+                Margin="5,0,5,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="12"
+                Foreground="White"
+                Text="{Binding Version, ElementName=versionControl}">
+            </TextBlock>
+            <Grid.Triggers>
+                <EventTrigger RoutedEvent="MouseUp">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <BooleanAnimationUsingKeyFrames 
+                                    Storyboard.TargetName="versionPopup" 
+                                    Storyboard.TargetProperty="IsOpen">
+                                    <DiscreteBooleanKeyFrame KeyTime="0:0:0" Value="True" />
+                                </BooleanAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Grid.Triggers>
+        </Grid>
+
+        <Popup
+            x:Name="versionPopup"
+            AllowsTransparency="True"
+            PlacementTarget="{Binding ElementName=versionGrid}"
+            Placement="Top"
+            HorizontalOffset="0" VerticalOffset="-5"
+            PopupAnimation="Slide"
+            StaysOpen="False">
+            <Border Margin="5" Background="Transparent">
+                <Border.Effect>
+                    <DropShadowEffect Direction="270" BlurRadius="5" ShadowDepth="1" Color="{StaticResource MediumGray}" />
+                </Border.Effect>
+                <Border
+                    CornerRadius="5"
+                    BorderThickness="0"
+                    Background="{StaticResource VeryLightGrayBrush}">
+                    <StackPanel Orientation="Vertical" Margin="20,10">
+                        <TextBlock
+                            Foreground="{StaticResource DarkTextBrush}"
+                            HorizontalAlignment="Center"
+                            FontWeight="SemiBold"
+                            FontSize="14">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat="{}{0} - {1}">
+                                    <Binding Path="ApplicationName" ElementName="versionControl"/>
+                                    <Binding Path="Version" ElementName="versionControl"/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                        <TextBlock
+                            Foreground="{StaticResource DarkTextBrush}"
+                            HorizontalAlignment="Center"
+                            FontSize="14"
+                            Text="{Binding Author, ElementName=versionControl, StringFormat='Developed by {0}'}">
+                        </TextBlock>
+
+                        <Rectangle Margin="20,10" Fill="{StaticResource MediumGrayBrush}" Height="1"></Rectangle>
+
+                        <local:IngeloopFullLogo Margin="5,0" Width="160"></local:IngeloopFullLogo>
+                        <Button Margin="40,10,40,5" Height="28" Click="VisitWebSiteButton_Click" ToolTip="www.ingeloop.com">
+                            <TextBlock FontSize="12">Visit Website</TextBlock>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Border>
+        </Popup>
+    </Grid>
+
+</UserControl>

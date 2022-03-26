@@ -17,18 +17,35 @@
     </Window.Resources>
     
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-        <theme:IngeloopFullLogo/>
+        <Grid Background="{StaticResource IngeloopMediumBlueBrush}">
+            <theme:VersionControl
+                ApplicationName="Sample"
+                Version="v1.2.3"
+                Author="Léo SALVADOR"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="0,8">
+            </theme:VersionControl>
+        </Grid>
 
-        <theme:IngeloopLogo Grid.Row="1"></theme:IngeloopLogo>
-        
-        <Button Width="150" Grid.Row="2">Click me</Button>
-        
-        
+        <Grid Grid.Column="1" Visibility="Visible">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <theme:IngeloopFullLogo/>
+
+            <theme:IngeloopLogo Grid.Row="1"></theme:IngeloopLogo>
+
+            <Button Width="150" Grid.Row="2">Click me</Button>
+        </Grid>
     </Grid>
 </Window>
