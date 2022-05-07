@@ -34,8 +34,8 @@
     <Reference Include="Ingeloop.WPF.Core, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ingeloop.WPF.Core.1.0.0.1\lib\net48\Ingeloop.WPF.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Ingeloop.WPF.Design, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ingeloop.WPF.Design.1.0.0.1\lib\net48\Ingeloop.WPF.Design.dll</HintPath>
+    <Reference Include="Ingeloop.WPF.Design, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ingeloop.WPF.Design.1.0.1\lib\net48\Ingeloop.WPF.Design.dll</HintPath>
     </Reference>
     <Reference Include="Ingeloop.WPF.Icons, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ingeloop.WPF.Icons.1.0.0.3\lib\net472\Ingeloop.WPF.Icons.dll</HintPath>
