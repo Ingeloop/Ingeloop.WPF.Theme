@@ -63,7 +63,7 @@
     <Compile Include="Controls\SplashScreens\IngeloopSplashScreen.xaml.cs">
       <DependentUpon>IngeloopSplashScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProgressRing.xaml.cs">
+    <Compile Include="Controls\Progress\ProgressRing.xaml.cs">
       <DependentUpon>ProgressRing.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,7 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
-    <Folder Include="Controls\Progress\" />
     <Folder Include="Styles\" />
   </ItemGroup>
   <ItemGroup>
@@ -97,7 +96,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProgressRing.xaml">
+    <Page Include="Controls\Progress\ProgressRing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
