@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ingeloop.WPF.Theme.Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="600" Width="1200"
+        WindowStartupLocation="CenterScreen"
         xmlns:icons="clr-namespace:Ingeloop.WPF.Icons;assembly=Ingeloop.WPF.Icons"
         xmlns:core="clr-namespace:Ingeloop.WPF.Core;assembly=Ingeloop.WPF.Core"
         xmlns:design="clr-namespace:Ingeloop.WPF.Design;assembly=Ingeloop.WPF.Design"
@@ -45,7 +46,7 @@
 
             <theme:IngeloopLogo Grid.Row="1"></theme:IngeloopLogo>
 
-            <Button Width="150" Grid.Row="2">Click me</Button>
+            <Button x:Name="SplashScreenButton" Width="150" Grid.Row="2" Click="SplashScreenButton_Click">Splash Screen</Button>
         </Grid>
     </Grid>
 </Window>

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -14,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ingeloop.WPF.Theme.Demo
+namespace Ingeloop.WPF.Theme
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ProgressRing.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProgressRing : UserControl
     {
-        public MainWindow()
+        public ProgressRing()
         {
             InitializeComponent();
-        }
-
-        private void SplashScreenButton_Click(object sender, RoutedEventArgs e)
-        {
-            SplashScreenManager.ShowSplashScreen(new Action(() => Thread.Sleep(1000)), 5000);
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -14,21 +14,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ingeloop.WPF.Theme.Demo
+namespace Ingeloop.WPF.Theme
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for IngeloopSplashScreen.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class IngeloopSplashScreen : Window
     {
-        public MainWindow()
+        public IngeloopSplashScreen()
         {
             InitializeComponent();
-        }
 
-        private void SplashScreenButton_Click(object sender, RoutedEventArgs e)
-        {
-            SplashScreenManager.ShowSplashScreen(new Action(() => Thread.Sleep(1000)), 5000);
+            AppNameTextBlock.Text = Assembly.GetExecutingAssembly()?.GetName()?.Name;
+
+            Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
+            AppVersionTextBlock.Text = $"v{currentVersion.Major}.{currentVersion.Minor}.{currentVersion.Build}";
         }
     }
 }

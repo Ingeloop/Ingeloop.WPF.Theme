@@ -60,15 +60,24 @@
     <Compile Include="Controls\Logo\IngeloopLogo.xaml.cs">
       <DependentUpon>IngeloopLogo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SplashScreens\IngeloopSplashScreen.xaml.cs">
+      <DependentUpon>IngeloopSplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressRing.xaml.cs">
+      <DependentUpon>ProgressRing.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\Decorators\VersionControl.xaml.cs">
       <DependentUpon>VersionControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SplashScreenManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Controls\Progress\" />
     <Folder Include="Styles\" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +90,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Logo\IngeloopLogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SplashScreens\IngeloopSplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressRing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
