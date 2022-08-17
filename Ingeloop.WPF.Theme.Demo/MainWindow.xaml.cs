@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,7 +29,11 @@ namespace Ingeloop.WPF.Theme.Demo
 
         private void SplashScreenButton_Click(object sender, RoutedEventArgs e)
         {
-            SplashScreenManager.ShowSplashScreen(new Action(() => Thread.Sleep(1000)), 5000);
+            string applicationName = Assembly.GetExecutingAssembly()?.GetName()?.Name;
+            Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
+            string versionName = $"v{currentVersion.Major}.{currentVersion.Minor}.{currentVersion.Build}";
+
+            SplashScreenManager.ShowSplashScreen(applicationName, versionName, new Action(() => Thread.Sleep(1000)), 5000);
         }
     }
 }

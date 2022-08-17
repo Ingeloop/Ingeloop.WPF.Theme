@@ -21,14 +21,12 @@ namespace Ingeloop.WPF.Theme
     /// </summary>
     public partial class IngeloopSplashScreen : Window
     {
-        public IngeloopSplashScreen()
+        public IngeloopSplashScreen(string applicationName, string versionName)
         {
             InitializeComponent();
 
-            AppNameTextBlock.Text = Assembly.GetExecutingAssembly()?.GetName()?.Name;
-
-            Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
-            AppVersionTextBlock.Text = $"v{currentVersion.Major}.{currentVersion.Minor}.{currentVersion.Build}";
+            AppNameTextBlock.Text = applicationName;
+            AppVersionTextBlock.Text = versionName;
         }
     }
 }

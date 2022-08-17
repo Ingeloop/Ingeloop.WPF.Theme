@@ -12,13 +12,13 @@ namespace Ingeloop.WPF.Theme
 {
     public static class SplashScreenManager
     {
-        public static void ShowSplashScreen(Action startupAction, int minimumDelay = 0)
+        public static void ShowSplashScreen(string applicationName, string versionName, Action startupAction, int minimumDelay = 0)
         {
             IngeloopSplashScreen splashScreen = null;
 
             Thread splashScreenThread = new Thread(() =>
             {
-                splashScreen = new IngeloopSplashScreen();
+                splashScreen = new IngeloopSplashScreen(applicationName, versionName);
                 splashScreen.ShowDialog();
             });
 
